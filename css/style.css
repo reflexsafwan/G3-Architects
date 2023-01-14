@@ -147,6 +147,10 @@ height: 100%;
  /* for mobile device */
 
  @media only screen and (max-width: 576px) {
+
+    .container{
+        margin: 0px 20px;
+    }
     /* nav area responsive */
     .header-area{
     flex-direction: column;
@@ -173,6 +177,30 @@ height: 100%;
     .hero-text button{
         margin-bottom: 30px;
     }
+/* feature area responsive start */
+    .feature-area{
+        flex-direction: column;
+        margin: 40px 0px;
+    }
+    .feature-img{
+        grid-template-columns: repeat(1, 1fr);
+        margin-right: 0px;
+        gap: 24px 0px;
+    }
+    .feature-text{
+        padding: 0px 20px;
+        margin-top: 40px;
+    }
+    
+    .feature-text h2{
+        text-align: center;
+    }
 
-
+    .feature-text p{
+      text-align: center;
+      width: 100%;
+    }
+    .feature-text button{
+        width: 100%;
+    }
  }
