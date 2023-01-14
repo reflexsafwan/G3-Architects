@@ -13,6 +13,10 @@ header{
     background-color: rgba(255, 143, 14, 0.1);
     height: 100%
 }
+p{
+    color:#727272;
+    line-height: 26px;
+}
 .container{
     margin: 0px 100px;
 }
@@ -68,8 +72,8 @@ nav{
     text-align: center;
 }
 .hero-text >p{
-    color:#727272;
     margin: 30px 0px;
+ 
 }
 .hero-text button{
     margin-bottom: 50px;
@@ -125,8 +129,6 @@ height: 100%;
     font-weight: bold;
 }
 .feature-text p{
-    color:#727272;
-    line-height: 26px;
     width: 60%;
     margin-top: 24px;
     margin-bottom: 32px;
@@ -138,6 +140,119 @@ height: 100%;
     font-size: 20px;
     border: none;
     border-radius: 8px;
+}
+
+/* service area start */
+
+.service-area{
+    display: flex;
+    margin-top: 132px;
+    
+}
+.service-area-text {
+    position: relative;
+    margin-right: 161px;
+
+
+}
+.service-area-heading h2{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+   
+}
+.service-area-heading .layer::after{
+    content: "";
+    background-color: #FF900E;;
+    position: absolute;
+    width: 5px;
+    height: 106px;
+    top:0;
+    left: -40px;
+}
+.service-area-heading p{
+    margin-top: 24px;
+    width: 586px
+
+}
+.service{
+    width: 586px;
+    height: 171px; 
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-top:30px ;
+    display: flex;  
+    align-items: center;
+    padding: 30px;
+}
+
+.service > h3{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #131313;
+}
+.service p{
+    margin-top: 10px;
+}
+.service-area-img img{
+    width: 100%;
+    height: 100%;
+}
+.btn-experience{
+    position: relative;
+    width: 342px;
+    height: 200px;
+    top: -130px;
+    left: 650px;
+    background: #FF900E;
+    border-radius: 8px;
+    border: none;
+
+}
+.btn-experience h2{
+    font-size: 65px;
+    color: #fff;
+    font-weight: 700;
+}
+.btn-experience p{
+    font-size: 25px;
+    color: #fff;
+    margin-top: 5px;
+  
+}
+
+/* faCTS area css start */
+.facts-area-text{
+    margin-left: 40px;
+}
+.facts-area-text h2{
+    font-size: 45px;
+    font-weight: 700;
+}
+.facts-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 108px;
+}
+.content{
+    border: 2px solid #FF900E;
+    border-radius: 8px;
+    padding: 40px 35px;
+    text-align: center;
+    transition: border 0.4s ease ;
+}
+.content:hover{
+   border: 2px solid navy;
+
+}
+.content h2{
+    margin: 10px 0px;
+    font-size: 45px;
+    font-weight: 600;
 }
 
 
@@ -203,4 +318,21 @@ height: 100%;
     .feature-text button{
         width: 100%;
     }
+
+/* service area responsive */
+.service-card{
+    width: 100%;
+}
+    .service-area{
+        flex-direction:column-reverse;
+    }
+
+/* facts area-responsive */
+.facts-content{
+    flex-direction: column;
+}
+.content{
+    width: 100%;
+    margin-top: 20px;
+}
  }
