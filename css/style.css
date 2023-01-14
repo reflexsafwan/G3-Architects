@@ -9,3 +9,32 @@
 body{
     font-family: 'Work Sans', sans-serif;
 }
+header{
+    background-color: rgba(255, 143, 14, 0.1);
+    height: 90vh;
+}
+nav{
+    margin: 0px 240px;
+}
+.header-area{
+    display: flex;
+    justify-content: space-between;
+}
+.logo> h1{
+    color:#131313;
+    font-size:45px ;
+    font-weight: bold;
+    margin-top: 30px;
+
+}
+.menu-area >ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.menu-area >ul>li{
+    margin-right: 70px;
+    list-style: none;
+    color: #424242;
+    font-size: 18px;
+}
