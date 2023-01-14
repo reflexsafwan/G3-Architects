@@ -13,6 +13,7 @@ header{
     background-color: rgba(255, 143, 14, 0.1);
     height: 90vh;
 }
+/* nav area css start */
 nav{
     margin: 0px 240px;
 }
@@ -38,3 +39,24 @@ nav{
     color: #424242;
     font-size: 18px;
 }
+
+/* responsive css start here */
+
+ /* for mobile device */
+
+ @media only screen and (max-width: 576px) {
+    /* nav area responsive */
+
+    .header-area{
+    flex-direction: column;
+    align-items: start;
+    }
+    .menu-area >ul{
+        flex-direction: column;
+        align-items: start;
+    }
+    nav{
+        margin: 0px 44px;
+    }
+
+ }
