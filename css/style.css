@@ -356,6 +356,58 @@ padding: 0px 20px;
 
 /* responsive css start here */
 
+@media only screen and (max-width:1200px){
+    nav{
+        margin: 0px 150px;
+    }
+    .logo> h1{
+        font-size: 30px;
+    } 
+    .hero-img >img{
+    padding: 20px;
+    }
+    .service-area{
+        gap: 100px;
+     
+    }
+.service-heading h2{
+    font-size: 40px;
+}
+  .service-img img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .btn{
+        display: none;
+    }
+
+
+    .facts-area{
+        margin-top: 50px;
+    }
+    .facts-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .sponsor-area-icon{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    text-align: center;
+ 
+    }
+    .sponsor-area-icon img{
+        width: auto;
+    }
+    .icon-hide{
+        display: none;
+    }
+}
+
+
  /* for mobile device */
 
  @media only screen and (max-width: 576px) {
@@ -388,6 +440,9 @@ padding: 0px 20px;
     }
     .hero-text button{
         margin-bottom: 30px;
+    }
+    .hero-img img{
+        padding: 0px 20px;
     }
 /* feature area responsive start */
     .feature-area{
