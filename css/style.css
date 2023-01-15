@@ -283,6 +283,64 @@ padding: 0px 20px;
     border-radius: 8px;
     font-size: 20px;
     }
+
+/* contact area css */
+.section-heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.section-heading > h2{
+    font-size: 30px;
+}
+.contact-content form{
+    display: grid;
+    gap:20px;
+    grid-template-areas:
+    "f l"
+    "e p"
+    "m m"
+    "s s"
+    ;
+}
+#first-name{
+    grid-area: f;
+}
+#last-name{
+    grid-area: l;
+}
+#email-addres{
+    grid-area: e;
+}
+#phone-number{
+    grid-area: p;
+}
+#message{
+    grid-area: m;
+}
+#send-message{
+    grid-area: s;
+    background-color:#424242;
+    margin-bottom: 100px;
+    transition-duration: 4s;
+}
+#send-message:hover{
+    color:aqua;
+    background-color: #fff;
+}
+.contact-content input{
+    padding: 10px;
+    border: 1px solid gray;
+    background-color: transparent;
+    color: #fff;
+}
+.contact-content textarea{
+    padding: 10px;
+    border: 1px solid gray;
+    background-color: transparent;
+    color: #fff;
+    font-family:'Work Sans', sans-serif ;
+}
+
     footer{
         margin-bottom: 100px;
     }
@@ -352,8 +410,8 @@ padding: 0px 20px;
 
 /* service area responsive */
   
-.container{
-    margin: 0px;
+.service-section > .container{
+    margin: 0px 15px;
 }
 .service-area{
     flex-direction: column;
@@ -391,8 +449,15 @@ padding: 0px 20px;
         flex-direction: column;
         gap: 20px;
     }
+
+    #send-message{
+        margin-bottom: 30px;
+    }
     .footer-content{
         padding: 30px 15px;
+    }
+        footer{
+        margin-bottom: 30px;
     }
 }
 
