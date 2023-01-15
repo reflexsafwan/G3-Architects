@@ -143,88 +143,81 @@ height: 100%;
 }
 
 /* service area start */
-
+.service-section{
+    position: relative;
+}
 .service-area{
     display: flex;
-    margin-top: 132px;
-    
+    gap: 160px;
+    margin-top: 137px;
+ 
 }
-.service-area-text {
-    position: relative;
-    margin-right: 161px;
-
-
+.service-content{
+    width: 50%;
+    height: 100%;
 }
-.service-area-heading h2{
+.service-heading > h2{
     font-weight: 700;
     font-size: 45px;
     line-height: 53px;
     color: #131313;
-   
+    margin-bottom:24px;
+    padding: 0px 20px;
 }
-.service-area-heading .layer::after{
-    content: "";
-    background-color: #FF900E;;
-    position: absolute;
-    width: 5px;
-    height: 106px;
-    top:0;
-    left: -40px;
+.service-heading >p{
+margin-bottom: 30px;
+padding: 0px 20px;
 }
-.service-area-heading p{
-    margin-top: 24px;
-    width: 586px
 
-}
-.service{
-    width: 586px;
-    height: 171px; 
+.cards{
+    width: 100%;
+    height: 171px;
     background: #FFFFFF;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
-    margin-top:30px ;
-    display: flex;  
-    align-items: center;
-    padding: 30px;
+    padding: 30px 40px;
+    margin-bottom: 20px;
 }
-
-.service > h3{
+.card-1 >h2{
     font-weight: 600;
     font-size: 20px;
     line-height: 23px;
     color: #131313;
+    margin-bottom: 10px;
 }
-.service p{
-    margin-top: 10px;
-}
-.service-area-img img{
-    width: 100%;
+.service-img{
+    width: 50%;
     height: 100%;
 }
-.btn-experience{
-    position: relative;
+
+.btn{
     width: 342px;
-    height: 200px;
-    top: -130px;
-    left: 650px;
+    height: 200px; 
     background: #FF900E;
     border-radius: 8px;
-    border: none;
+    padding: 46px 42px;
+    text-align: center;
+    color: #FFFFFF;
+    position:absolute;
+    bottom: -10%;
+    right: 35%;
+}
+.btn >h2{
+    font-size: 65px;
+    font-weight: bold;
 
 }
-.btn-experience h2{
-    font-size: 65px;
-    color: #fff;
-    font-weight: 700;
+.btn> p{
+   font-size: 25px; 
+   font-weight: 500;
 }
-.btn-experience p{
-    font-size: 25px;
-    color: #fff;
-    margin-top: 5px;
-  
-}
+
 
 /* faCTS area css start */
+
+.facts-area{
+    margin-top: 78px;
+}
 .facts-area-text{
     margin-left: 40px;
 }
@@ -358,29 +351,49 @@ height: 100%;
     }
 
 /* service area responsive */
-.service-card{
+  
+.container{
+    margin: 0px;
+}
+.service-area{
+    flex-direction: column;
+    gap: 30px;
+ 
+}
+.service-content{
     width: 100%;
 }
-    .service-area{
-        flex-direction:column-reverse;
-    }
+.service-img{
+    width: 100%;
+}
+
+
+.service-img > img{
+    width: 100%;
+}
+
+.btn{
+  display: none;
+}
 
 /* facts area-responsive */
-.facts-content{
-    flex-direction: column;
-}
-.content{
-    width: 100%;
-    margin-top: 20px;
-}
+    .facts-content{
+        flex-direction: column;
+    }
+    .content{
+        width: 100%;
+        margin-top: 20px;
+    }
 
 
 /* our sponsor area */
-.sponsor-area-icon{
-    flex-direction: column;
-    gap: 20px;
+    .sponsor-area-icon{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-content{
+        padding: 30px 15px;
+    }
 }
-.footer-content{
-    padding: 30px 15px;
-}
-}
+
+
