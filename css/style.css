@@ -408,7 +408,7 @@ padding: 0px 20px;
 }
 
 
-@media only screen and (min-width:577px) and (max-width:992px){
+@media only screen  and (max-width:992px){
     .container{
         margin: 0px 100px;
     }
@@ -554,7 +554,8 @@ padding: 0px 20px;
 
 /* facts area-responsive */
     .facts-content{
-        flex-direction: column;
+      display: grid;
+      grid-template-columns: repeat(1 ,1fr);
     }
     .content{
         width: 100%;
@@ -564,7 +565,8 @@ padding: 0px 20px;
 
 /* our sponsor area */
     .sponsor-area-icon{
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
         gap: 20px;
     }
 
